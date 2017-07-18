@@ -9,7 +9,7 @@
 	top:144%;
 }
 .carousel .indicators .indicator-item.active{
-	background-color:orange;
+	background-color:$Rojo-bullet;
 	height:15px;
 	width:15px;
 }
@@ -17,4 +17,7 @@
 	border:solid 1px black;
 	height:15px;
 	width:15px;
+}
+.btn-large{
+	background-color:$Amarillo-botones;
 }

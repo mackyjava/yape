@@ -9,7 +9,7 @@
   top: 144%; }
 
 .carousel .indicators .indicator-item.active {
-  background-color: orange;
+  background-color: #f64552;
   height: 15px;
   width: 15px; }
 
@@ -17,5 +17,8 @@
   border: solid 1px black;
   height: 15px;
   width: 15px; }
+
+.btn-large {
+  background-color: #fbd43b; }
 
 /*# sourceMappingURL=main.css.map */
