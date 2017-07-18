@@ -59,4 +59,4 @@ typings/
 
 # databases
 api/users/*
-node_modules
+.sass-cache
