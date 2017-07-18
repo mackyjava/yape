@@ -1,12 +1,12 @@
 .carousel{
-	overflow:visible;
+	overflow:inherit;
 }
 .carousel .carousel-item>img{
 	width:30%;
 	height:350px;
 }
 .carousel .indicators{
-	top:144%;
+	top:147%;
 }
 .carousel .indicators .indicator-item.active{
 	background-color:$Rojo-bullet;
@@ -20,4 +20,101 @@
 }
 .btn-large{
 	background-color:$Amarillo-botones;
+	margin-top:3%;
+}
+@media all and (max-width:772px) and (min-width:600px){
+ .carousel{
+	overflow:inherit;
+}
+   .carousel .carousel-item>img{
+	width:37.5%;
+	height:250px;
+  }
+   .carousel .indicators{
+	top:150%;
+  }
+   .carousel .indicators .indicator-item.active{
+	background-color:$Rojo-bullet;
+	height:13px;
+	width:13px;
+  }
+   .carousel .indicators .indicator-item{
+	border:solid 1px black;
+	height:13px;
+	width:13px;
+  }
+  .btn-large{
+	background-color:$Amarillo-botones;
+	margin-top:3%;
+  }
+  .row .col{
+  	clear:both;
+  }
+  .row .info{
+  	margin-top:-4%;
+  }	
+}
+@media all and (max-width:599px) and (min-width:320px){
+	.carousel{
+	overflow:inherit;
+}
+   .carousel .carousel-item>img{
+	width:42.5%;
+	height:200px;
+  }
+   .carousel .indicators{
+	top:181%;
+  }
+   .carousel .indicators .indicator-item.active{
+	background-color:$Rojo-bullet;
+	height:13px;
+	width:13px;
+  }
+   .carousel .indicators .indicator-item{
+	border:solid 1px black;
+	height:13px;
+	width:13px;
+  }
+  .btn-large{
+	background-color:$Amarillo-botones;
+	margin-top:3%;
+  }
+  .row .col{
+  	clear:both;
+  }
+  .row .info{
+  	margin-top:-7%;
+  }	
+}
+@media all and (max-width:319px) and (min-width:100px){
+	.carousel{
+	overflow:visible;
+  }
+   .carousel .carousel-item>img{
+	width:37.5%;
+	height:250px;
+  }
+   .carousel .indicators{
+	top:150%;
+  }
+   .carousel .indicators .indicator-item.active{
+	background-color:$Rojo-bullet;
+	height:13px;
+	width:13px;
+  }
+   .carousel .indicators .indicator-item{
+	border:solid 1px black;
+	height:13px;
+	width:13px;
+  }
+  .btn-large{
+	background-color:$Amarillo-botones;
+	margin-top:3%;
+  }
+  .row .col{
+  	clear:both;
+  }
+  .row .info{
+  	margin-top:-4%;
+  }	
 }
