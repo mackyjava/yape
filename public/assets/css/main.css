@@ -1,12 +1,12 @@
-.carousel {
-  overflow: inherit; }
+div.carousel.carousel-slider {
+  height: 700px !important; }
 
 .carousel .carousel-item > img {
-  width: 30%;
-  height: 350px; }
+  width: 75%;
+  height: 400px; }
 
 .carousel .indicators {
-  top: 147%; }
+  top: 80%; }
 
 .carousel .indicators .indicator-item.active {
   background-color: #f64552;
@@ -20,18 +20,23 @@
 
 .btn-large {
   background-color: #fbd43b;
-  margin-top: 3%; }
+  margin-top: -13%; }
+
+.row .info {
+  margin-top: -40%;
+  position: absolute;
+  z-index: -1; }
 
 @media all and (max-width: 772px) and (min-width: 600px) {
-  .carousel {
-    overflow: inherit; }
+  div.carousel.carousel-slider {
+    height: 600px !important; }
 
   .carousel .carousel-item > img {
-    width: 37.5%;
-    height: 250px; }
+    width: 75%;
+    height: 300px; }
 
   .carousel .indicators {
-    top: 150%; }
+    top: 90%; }
 
   .carousel .indicators .indicator-item.active {
     background-color: #f64552;
@@ -51,17 +56,19 @@
     clear: both; }
 
   .row .info {
-    margin-top: -4%; } }
+    margin-top: -45%;
+    position: absolute;
+    z-index: -1; } }
 @media all and (max-width: 599px) and (min-width: 320px) {
-  .carousel {
-    overflow: inherit; }
+  div.carousel.carousel-slider {
+    height: 500px !important; }
 
   .carousel .carousel-item > img {
-    width: 42.5%;
+    width: 80%;
     height: 200px; }
 
   .carousel .indicators {
-    top: 179%; }
+    top: 90%; }
 
   .carousel .indicators .indicator-item.active {
     background-color: #f64552;
@@ -71,7 +78,8 @@
   .carousel .indicators .indicator-item {
     border: solid 1px black;
     height: 13px;
-    width: 13px; }
+    width: 13px;
+    visibility: visible; }
 
   .btn-large {
     background-color: #fbd43b;
@@ -81,7 +89,9 @@
     clear: both; }
 
   .row .info {
-    margin-top: -7%; } }
+    margin-top: -70%;
+    position: absolute;
+    z-index: -1; } }
 @media all and (max-width: 319px) and (min-width: 100px) {
   .carousel {
     overflow: visible; }
@@ -111,6 +121,6 @@
     clear: both; }
 
   .row .info {
-    margin-top: -4%; } }
+    margin-top: -40%; } }
 
 /*# sourceMappingURL=main.css.map */
