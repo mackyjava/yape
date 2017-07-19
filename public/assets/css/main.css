@@ -1,0 +1,126 @@
+div.carousel.carousel-slider {
+  height: 700px !important; }
+
+.carousel .carousel-item > img {
+  width: 75%;
+  height: 400px; }
+
+.carousel .indicators {
+  top: 80%; }
+
+.carousel .indicators .indicator-item.active {
+  background-color: #f64552;
+  height: 15px;
+  width: 15px; }
+
+.carousel .indicators .indicator-item {
+  border: solid 1px black;
+  height: 15px;
+  width: 15px; }
+
+.btn-large {
+  background-color: #fbd43b;
+  margin-top: -13%; }
+
+.row .info {
+  margin-top: -40%;
+  position: absolute;
+  z-index: -1; }
+
+@media all and (max-width: 772px) and (min-width: 600px) {
+  div.carousel.carousel-slider {
+    height: 600px !important; }
+
+  .carousel .carousel-item > img {
+    width: 75%;
+    height: 300px; }
+
+  .carousel .indicators {
+    top: 90%; }
+
+  .carousel .indicators .indicator-item.active {
+    background-color: #f64552;
+    height: 13px;
+    width: 13px; }
+
+  .carousel .indicators .indicator-item {
+    border: solid 1px black;
+    height: 13px;
+    width: 13px; }
+
+  .btn-large {
+    background-color: #fbd43b;
+    margin-top: 3%; }
+
+  .row .col {
+    clear: both; }
+
+  .row .info {
+    margin-top: -45%;
+    position: absolute;
+    z-index: -1; } }
+@media all and (max-width: 599px) and (min-width: 320px) {
+  div.carousel.carousel-slider {
+    height: 500px !important; }
+
+  .carousel .carousel-item > img {
+    width: 80%;
+    height: 200px; }
+
+  .carousel .indicators {
+    top: 90%; }
+
+  .carousel .indicators .indicator-item.active {
+    background-color: #f64552;
+    height: 13px;
+    width: 13px; }
+
+  .carousel .indicators .indicator-item {
+    border: solid 1px black;
+    height: 13px;
+    width: 13px;
+    visibility: visible; }
+
+  .btn-large {
+    background-color: #fbd43b;
+    margin-top: 3%; }
+
+  .row .col {
+    clear: both; }
+
+  .row .info {
+    margin-top: -70%;
+    position: absolute;
+    z-index: -1; } }
+@media all and (max-width: 319px) and (min-width: 100px) {
+  .carousel {
+    overflow: visible; }
+
+  .carousel .carousel-item > img {
+    width: 37.5%;
+    height: 250px; }
+
+  .carousel .indicators {
+    top: 154%; }
+
+  .carousel .indicators .indicator-item.active {
+    background-color: #f64552;
+    height: 13px;
+    width: 13px; }
+
+  .carousel .indicators .indicator-item {
+    border: solid 1px black;
+    height: 13px;
+    width: 13px; }
+
+  .btn-large {
+    background-color: #fbd43b;
+    margin-top: 3%; }
+
+  .row .col {
+    clear: both; }
+
+  .row .info {
+    margin-top: -40%; } }
+
+/*# sourceMappingURL=main.css.map */
