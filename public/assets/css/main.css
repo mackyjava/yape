@@ -1,12 +1,12 @@
 div.carousel.carousel-slider {
-  height: 700px !important; }
+  height: 600px !important; }
 
 .carousel .carousel-item > img {
-  width: 75%;
+  width: 60%;
   height: 400px; }
 
 .carousel .indicators {
-  top: 80%; }
+  top: 90%; }
 
 .carousel .indicators .indicator-item.active {
   background-color: #f64552;
@@ -20,10 +20,10 @@ div.carousel.carousel-slider {
 
 .btn-large {
   background-color: #fbd43b;
-  margin-top: -13%; }
+  margin-top: -8%; }
 
 .row .info {
-  margin-top: -40%;
+  margin-top: -18%;
   position: absolute;
   z-index: -1; }
 
