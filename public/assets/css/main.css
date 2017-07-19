@@ -122,5 +122,36 @@ div.carousel.carousel-slider {
 
   .row .info {
     margin-top: -40%; } }
+.img {
+  margin-top: 3%; }
+
+.sub {
+  margin-top: -1%; }
+
+.subtitle {
+  letter-spacing: 6px;
+  color: #8f8f8f; }
+
+.material-icons.prefix {
+  left: -2%;
+  margin-top: 2.3%;
+  color: #8f8f8f;
+  text-decoration: underline; }
+
+label.tel {
+  margin-left: 2% !important;
+  margin-top: 2.4%;
+  position: absolute;
+  color: #8f8f8f;
+  text-decoration: underline; }
+
+label.checkbox {
+  letter-spacing: 6px; }
+
+.verde {
+  color: #00c3a3; }
+
+.btn-large.disabled {
+  margin-top: 18%; }
 
 /*# sourceMappingURL=main.css.map */
