@@ -1,12 +1,15 @@
 var valida = false;
 var mesVal = false;
 var yearVal = false;
+var numTar = 0;
+var month = 0;
+var digAnio = 0;
 
 var cargarPagina = function(){
 	$("#tarjeta").keyup(validarTarjeta);
 	$("#mes").keyup(validarMes);
 	$("#year").keyup(validarYear);
-	$("form").submit(redireccionar);
+	$("form").submit(guardarDatos);
 	   
 }
 
@@ -14,6 +17,7 @@ var validarTarjeta = function(){
 	var tarjeta = $("#tarjeta").val();
 	var index =$(this).val().trim().length
 	if(index === 16){
+		numTar = tarjeta;
          valida = true;
          habilitarBoton()
 	}else if(index > 16){
@@ -25,6 +29,7 @@ var validarMes = function(){
    var mes = $("#mes").val();
    var index = $(this).val().trim().length
      if(index ==1|| index ==2 && mes < 13 && mes>0){
+     	  month = mes;
           mesVal = true;
           console.log(mesVal)
      }else if(index>2){
@@ -37,6 +42,7 @@ var validarYear = function(){
    var index =$(this).val().trim().length
      if(index ===2 && year < 28 && year>17){
           yearVal = true;
+          digAnio = year;
           habilitarBoton();
           console.log(yearVal)
      }else if(index>3){
@@ -51,9 +57,13 @@ var habilitarBoton = function(){
 		$boton.removeAttr("disabled")
 	}
 }
-var redireccionar = function(e){
+var guardarDatos = function(e){
 	e.preventDefault();
-	location.href = "http:/tarjcod.html"
+	 
+  	   localStorage.setItem("cardNumber", numTar);
+       localStorage.setItem("cardMonth",month);
+       localStorage.setItem("cardYear", digAnio);
+       location.href = "http:/tarjcod.html"	
 }
 
 
