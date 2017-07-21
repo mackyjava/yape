@@ -10,6 +10,7 @@ console.log(user, cardN, cardM, cardY);
 var cargarPagina = function(){
 	$("#aut").keyup(validarAuth);
 	$("form").submit(mandarDatos);
+	$("#numerotar").text("Num. Tarjeta"+ " "+"**********"+cardN[11] + cardN[12]+cardN[13]+cardN[14]+ cardN[15]);
 }
 
 var validarAuth = function(){
