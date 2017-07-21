@@ -151,7 +151,48 @@ label.checkbox {
 .verde {
   color: #00c3a3; }
 
-.btn-large.disabled {
+.btn-large.grande {
   margin-top: 18%; }
+
+.container-fluid.listo {
+  background-color: #fbd43b;
+  height: 650px; }
+
+.ultima {
+  background-color: #451e36; }
+
+.morado {
+  background-color: #38052a; }
+
+.borde {
+  border-top: solid thin #38052a;
+  border-bottom: solid thin #451e36; }
+
+.row .ultima {
+  height: 450px; }
+
+.bajar {
+  margin-top: 1.5%; }
+
+.margin-t {
+  margin-top: 16%; }
+
+.icon {
+  widht: 15px;
+  height: 15px; }
+
+.subir {
+  margin-top: -1.5%;
+  margin-left: -5%;
+  position: absolute; }
+
+.icono {
+  widht: 35px;
+  height: 35px;
+  margin-top: 5.4%; }
+
+.icono img {
+  margin-top: -2%;
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

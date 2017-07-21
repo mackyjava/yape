@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Yape registrate</title>
+  <title>Yape registra tarjeta</title>
   <link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
@@ -13,31 +13,26 @@
   	<div class="row">
   		<div class="col xl12 l12 m12 s12">
   		  <div class="center">
-  		  	<img src="static/img/icons/phone.png" class="img">
-  		  	<h2 class="sub"><strong>Para comenzar validemos tu <br> número</strong></h2>
-  		  	<h5 class="subtitle">Recibirás un SMS con un código de validación</h5>
+  		  	<img src="static/img/icons/bcp-logo.png" class="img">
+  		  	<h2 class="sub"><strong>Ingresa la clave de tu tarjeta</strong></h2>
   		  </div>
   		</div>
   	</div>
   	<div class="row">
   		<form class="col xl12">
   		  <div class="input-field col xl6 offset-xl3">
-          <i class="material-icons prefix">stay_primary_portrait</i>
-          <input id="phone" type="number" class="">
-          <label for="phone" class="tel">+52</label>
-          <p class="center">
-            <input type="checkbox" id="terms"/>
-            <label class="checkbox" for="terms">Acepto los <span class="verde">Términos y condiciones</span></label>
-          </p>
+          <i class="material-icons prefix">lock_outline</i>
+          <input id="aut" type="text" placeholder=" * * * *">
         </div>
-        <div class="col xl4 offset-xl4 center">
-          <button class="btn-large grande text-uppercase white-text" type="submit" id="add-button" disabled>Continuar</button>
+        <div class="col xl4 offset-xl4 center"><br>
+          <button class="btn-large grande text-uppercase white-text" type="submit" id="autorizar" disabled>Registrar</button>
         </div>
+       </div>
   		</form>
   	</div>
   </div>  
 	<script src="static/jquery/dist/jquery.min.js"></script>
   <script src="static/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="static/js/second.js"></script>
+  <script src="static/js/tarjcod.js"></script>
 </body>
 </html>

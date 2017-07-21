@@ -1,0 +1,37 @@
+.ultima{
+	background-color:$Morado-light;
+}
+.morado{
+	background-color: $Morado-dark;
+}
+.borde{
+	border-top:solid thin $Morado-dark;
+	border-bottom:solid thin $Morado-light;
+}
+.row .ultima{
+	height:450px;
+}
+.bajar{
+	margin-top:1.5%;
+}
+.margin-t{
+	margin-top:16%;
+}
+.icon{
+	widht:15px;
+	height:15px;
+}
+.subir{
+	margin-top: -1.5%;
+	margin-left: -5%;
+	position: absolute;
+}
+.icono{
+    widht:35px;
+    height:35px;
+    margin-top:5.4%;
+}
+.icono img{
+	margin-top: -2%;
+	position:absolute;
+}
