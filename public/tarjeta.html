@@ -23,22 +23,22 @@
   		<form class="col xl12">
   		  <div class="input-field col xl6 offset-xl3">
           <i class="material-icons prefix">credit_card</i>
-          <input id="name" type="text" placeholder="Ingresa los 16 digitos de tu tarjeta">
+          <input id="tarjeta" type="number" placeholder="Ingresa los 16 digitos de tu tarjeta">
           <span class="col xl6 offset-xl3 verde">
             <img src="static/img/icons/scan.png" class="icon">              Escanear tarjeta
           </span>
         </div> 
         <div class="col xl6 offset-xl3">
-          <p><label for="mes " class="left">Fecha de vencimiento</label><span class="col xl2 offset-xl4"><input id="mes" type="number" placeholder="MES">
+          <p><label for="mes " class="left">Fecha de vencimiento</label><span class="col xl2 offset-xl4"><input id="mes" type="number" name="mes" placeholder="MES">
           </span>
           <span class="col xl2">
-          <input type="number" placeholder="AÑO">
+          <input id="year" type="number" placeholder="AÑO">
           </span>
           </p>
         </div>  
         
         <div class="col xl4 offset-xl4 center"><br>
-          <button class="btn-large text-uppercase white-text" type="submit" id="crear" disabled>Continuar</button>
+          <button class="btn-large text-uppercase white-text" type="submit" id="continuar" disabled>Continuar</button>
         </div>
        </div>
   		</form>
@@ -46,6 +46,6 @@
   </div>  
 	<script src="static/jquery/dist/jquery.min.js"></script>
   <script src="static/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="static/js/codigo.js"></script>
+  <script src="static/js/tarjeta.js"></script>
 </body>
 </html>
