@@ -27,11 +27,13 @@
         </div>  
         <div class="input-field col xl6 offset-xl3">
           <i class="material-icons prefix">email</i>
-          <input id="mail" type="email" placeholder="ejemplo@example.com">
+          <input id="email" type="email" placeholder="ejemplo@example.com" class=" validate">
+
+          <label for="email" data-error="wrong" data-success="right">Email</label>
         </div>
         <div class="input-field col xl6 offset-xl3">
           <i class="material-icons prefix">lock_outline</i>
-          <input id="contraseña" type="password" placeholder="Nombre">
+          <input id="pass" type="password" placeholder="contraseña de 6 digitos">
         </div>
         <div class="col xl4 offset-xl4 center"><br>
           <button class="btn-large text-uppercase white-text" type="submit" id="crear" disabled>Crear Cuenta</button>
@@ -42,6 +44,6 @@
   </div>  
 	<script src="static/jquery/dist/jquery.min.js"></script>
   <script src="static/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="static/js/codigo.js"></script>
+  <script src="static/js/usuario.js"></script>
 </body>
 </html>

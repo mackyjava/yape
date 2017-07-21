@@ -166,7 +166,7 @@ label.checkbox {
 
 .borde {
   border-top: solid thin #38052a;
-  border-bottom: solid thin white !important; }
+  border-bottom: solid thin #451e36; }
 
 .row .ultima {
   height: 450px; }
@@ -190,5 +190,9 @@ label.checkbox {
   widht: 35px;
   height: 35px;
   margin-top: 5.4%; }
+
+.icono img {
+  margin-top: -2%;
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

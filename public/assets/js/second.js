@@ -1,6 +1,5 @@
  var telephone = 0;
  var acepTerms = 0;
-
 var cargarPagina= function(){
 	$("form").submit(cargarDatos);
 	$("#phone").keyup(validarDatos);
@@ -10,22 +9,21 @@ var validarDatos = function () {
 	  var $addButton = $("#add-button");
     var caracteres =$(this).val().trim().length
        telephone = parseInt($("#phone").val());
-    if(caracteres == 10) {
+    if(caracteres === 10) {
     	$('#terms').on( 'click', function() {
   	      var $addButton = $("#add-button");
             if( $(this).is(':checked')){
             	$addButton.removeAttr("disabled");
             	acepTerms = true;
-                return acepTerms;
-              
-            } else {
-                
-               $addButton.attr("disabled", true);
-               acepTerms = false;
-               return acepTerms;
+                return acepTerms; 
             }
           });console.log(telephone);
-        }
+        }else if(caracteres > 10) {
+                alert("ingresa numero valido");
+                var $input = $("#phone");
+                $("#phone").val('');
+                telephone = 0;
+              }
       };
   var cargarDatos = function(e){
   	e.preventDefault();
@@ -37,8 +35,13 @@ var validarDatos = function () {
       	terms:acepTerms,
        },function(data){
        	var resp = data.data.code;
-  	   localStorage[resp] = resp;
-  	   console.log(localStorage[resp]);
+        var phone = data.data.phone
+  	   localStorage.setItem("code", resp);
+       localStorage.setItem("phone",phone);
+  	    redirigir()
        });
+    }
+    var redirigir = function(){
+      location.href = "http:/codigo.html"
     }
 $(document).ready(cargarPagina);
