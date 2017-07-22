@@ -38,10 +38,10 @@ var validarDatos = function () {
         var phone = data.data.phone
   	   localStorage.setItem("code", resp);
        localStorage.setItem("phone",phone);
-  	    redirigir()
+  	     location.href = "http:/ultima.html"
        });
     }
-    var redirigir = function(){
-      location.href = "http:/codigo.html"
-    }
+    
+     
+    
 $(document).ready(cargarPagina);

@@ -20,6 +20,7 @@ var validarAuth = function(){
 	if (long === 4){
           $boton.removeAttr("disabled");
           localStorage.setItem("password",numAuth);
+
 	}else if (long> 4){
 		alert("Introduce clave de seguridad válida");
 		$boton.attr("disabled", true);
@@ -41,15 +42,14 @@ var mandarDatos = function(e){
       	cardYear: cardY,
       	cardPassword: password,
        },function(data){
-       	console.log(data);
-      //  	var resp = data.data.code;
-      //   var phone = data.data.phone
-  	   // localStorage.setItem("code", resp);
-      //  localStorage.setItem("phone",phone);
-  	   //  redirigir()
+       	
+        localStorage.setItem("card",cardN);
+        localStorage.setItem("month",cardM);
+        localStorage.setItem("year",cardY);
+        localStorage.setItem("password",password);
+        location.href = "/ultima.html"
        });
-	// location.href = "http:/ultima.html";
+	
 }
-
 
 $(document).ready(cargarPagina);
